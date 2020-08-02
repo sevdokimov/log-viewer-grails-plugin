@@ -1,5 +1,6 @@
 package com.logviewer.grails
 
+
 import com.logviewer.config.LogViewerAutoConfig
 import com.logviewer.config.LvConfigBase
 import com.logviewer.web.LogViewerServlet
@@ -20,9 +21,7 @@ class LogViewerGrailsPluginGrailsPlugin extends Plugin {
     def author = "Sergey Evdokimov"
     def authorEmail = "sergey.evdokimov85@gmail.com"
     def description = '''\
-Provides web UI to monitor application logs. 
-Filtering / highlight / search is available. No problem with big files.
- 
+Provides web UI to monitor application logs. Filtering / highlight / search is available. No problem with big files.
 '''
     def profiles = ['web']
 
@@ -69,6 +68,8 @@ Filtering / highlight / search is available. No problem with big files.
 
                 urlMappings = [logServletPath]
             }
+
+            logViewerStacktraceViewCfg(GrailsUiConfigurer.class)
         }
     }
 
