@@ -22,7 +22,9 @@ public class GrailsUiConfigurer implements LvUiConfigurer {
             return null;
         
         List<String> packagesList = Arrays.stream(appPackages.split("[, ;]+")).filter(s -> !s.isEmpty()).collect(Collectors.toList());
-        System.out.println(packagesList);
+        if (packagesList.isEmpty())
+            return null;
+
         return ConfigFactory.parseMap(Collections.singletonMap("properties.\"java-exception-renderer.home-package\"", packagesList));
     }
 }
