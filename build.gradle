@@ -74,6 +74,7 @@ grailsPublish {
     license {
         name = 'Apache-2.0'
     }
+    repo = "log-viewer"
     title = "Log Viewer"
     desc = "Grails plugin to monitor application logs with web UI"
     developers = [sevdokimov:"Sergey Evdokimov"]
