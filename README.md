@@ -22,6 +22,7 @@ can be deployed as a separated application, separated log monitoring application
 `log-viewer.home-package` - A list of java packages where application's source code is located. This list is used to 
 render exceptions. Application's classes will be highlighted, other classes will be collapsed. For example, if 
 _log-viewer.home-package=com.mycompany,org.mycompany_, a stacktrace will look like
+
 ![](_docs/stacktrace.png)
 
 ### Screenshot
